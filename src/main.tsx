@@ -1,22 +1,23 @@
-import { CssBaseline, ThemeProvider } from '@mui/material';
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom/client';
-import { RouterProvider } from 'react-router-dom';
-import router from './router';
-import { darkTheme } from './themes';
-import './i18n';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router';
+import AboutPage from './pages/AboutPage.tsx';
+import ExperiencePage from './pages/ExperiencePage.tsx';
+import ProjectsPage from './pages/ProjectsPage.tsx';
+import App from './App.tsx';
+import './i18n.ts';
+import './styles/global.scss';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement,
-);
-
-root.render(
-  <React.StrictMode>
-    <Suspense>
-      <ThemeProvider theme={darkTheme}>
-        <CssBaseline />
-        <RouterProvider router={router} />
-      </ThemeProvider>
-    </Suspense>
-  </React.StrictMode>,
+createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+        <BrowserRouter>
+            <Routes>
+                <Route element={<App />}>
+                    <Route index element={<AboutPage />} />
+                    <Route path="experience" element={<ExperiencePage />} />
+                    <Route path="projects" element={<ProjectsPage />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    </StrictMode>,
 );

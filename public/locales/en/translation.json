@@ -1,0 +1,9 @@
+{
+    "navigation": {
+        "pages": {
+            "about": "About me",
+            "experience": "Experience",
+            "projects": "Projects"
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@use '../../styles/variables';
+
+.baseLayout {
+    &__header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 32px;
+
+        &__title {
+            & > svg {
+                margin-right: 8px;
+            }
+            & > svg,
+            & > span {
+                color: variables.$primaryColor;
+            }
+        }
+        &__navigation {
+            align-items: center;
+            display: flex;
+            gap: 24px;
+
+            &__item {
+                border-radius: 24px;
+                transition: 0.4s color ease;
+
+                &:hover {
+                    color: variables.$primaryColor;
+                }
+                &--active {
+                    background-color: variables.$teal900;
+                    padding: 12px 36px;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+                & > a {
+                    align-items: center;
+                    display: flex;
+                    gap: 4px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

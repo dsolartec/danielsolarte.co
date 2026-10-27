@@ -1,0 +1,9 @@
+{
+    "navigation": {
+        "pages": {
+            "about": "Sobre mi",
+            "experience": "Experiencia",
+            "projects": "Proyectos"
+        }
+    }
+}

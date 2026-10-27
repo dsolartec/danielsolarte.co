@@ -1,10 +1,10 @@
-import { Outlet } from 'react-router-dom';
-import { MainTemplate } from './templates';
+import { Outlet } from 'react-router';
+import BaseLayout from './layouts/BaseLayout/BaseLayout';
 
-export default function App(): JSX.Element {
-  return (
-    <MainTemplate>
-      <Outlet />
-    </MainTemplate>
-  );
+export default function App() {
+    return (
+        <BaseLayout>
+            <Outlet />
+        </BaseLayout>
+    );
 }
