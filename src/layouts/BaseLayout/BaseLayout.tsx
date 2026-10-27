@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-import { NavLink, useLocation } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import BriefcaseIcon from '../../assets/tablericons/briefcase.svg?react';
 import BriefcaseFilledIcon from '../../assets/tablericons/briefcase-filled.svg?react';
 import CodeIcon from '../../assets/tablericons/code.svg?react';
@@ -61,12 +61,12 @@ export default function BaseLayout({ children }: React.PropsWithChildren<{}>) {
                                     },
                                 )}
                             >
-                                <NavLink to={item.to}>
+                                <Link to={item.to}>
                                     {isActive
                                         ? item.icon.active
                                         : item.icon.disabled}
                                     {t(item.title)}
-                                </NavLink>
+                                </Link>
                             </li>
                         );
                     })}
