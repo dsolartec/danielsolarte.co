@@ -1,6 +1,6 @@
 import GitHubIcon from '../assets/devicons/github-original.svg?react';
 import LinkedInIcon from '../assets/tablericons/brand-linkedin.svg?react';
-import { TelegramIcon, XTwitterIcon } from '../components/ui/Icons/Icons';
+import { TelegramIcon } from '../components/ui/Icons/Icons';
 import type { SocialNetworkItem } from '../interfaces/social-networks';
 
 export const SOCIAL_NETWORKS: SocialNetworkItem[] = [
@@ -18,10 +18,5 @@ export const SOCIAL_NETWORKS: SocialNetworkItem[] = [
         icon: <TelegramIcon width={20} height={20} />,
         title: 'Telegram Profile',
         url: 'https://t.me/dsolartec',
-    },
-    {
-        icon: <XTwitterIcon width={16} height={16} />,
-        title: 'Twitter Profile',
-        url: 'https://twitter.com/dsolartec',
     },
 ];
