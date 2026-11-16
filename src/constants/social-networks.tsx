@@ -1,6 +1,6 @@
-import GitHubIcon from '../assets/devicons/github-original.svg?react';
+import GitHubIcon from '../assets/tablericons/brand-github.svg?react';
 import LinkedInIcon from '../assets/tablericons/brand-linkedin.svg?react';
-import { TelegramIcon } from '../components/ui/Icons/Icons';
+import TelegramIcon from '../assets/tablericons/brand-telegram.svg?react';
 import type { SocialNetworkItem } from '../interfaces/social-networks';
 
 export const SOCIAL_NETWORKS: SocialNetworkItem[] = [
