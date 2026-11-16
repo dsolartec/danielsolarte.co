@@ -65,10 +65,10 @@ export default function ContactSection() {
                                             {t('contact.emailLabel')}
                                         </span>
                                         <a
-                                            href="mailto:daniel.solarte@example.com"
+                                            href="mailto:info@danielsolarte.co"
                                             className="contactSection__info__value"
                                         >
-                                            daniel.solarte@example.com
+                                            info@danielsolarte.co
                                         </a>
                                     </div>
                                 </div>
