@@ -1,0 +1,98 @@
+@use '../../../styles/variables';
+
+.heroSection {
+    padding: 0 32px;
+
+    &__about {
+        max-width: 40%;
+        padding-left: 36px;
+
+        &__greeting {
+            background-color: rgba(white, 0.1);
+            border-radius: 4px;
+            font: {
+                size: 0.75rem;
+                weight: 500;
+            };
+            letter-spacing: 0.05em;
+            padding: 4px 8px;
+        }
+        &__fullName {
+            font-size: 2.5rem;
+            margin-top: 0.75rem;
+
+            & > span {
+                color: variables.$primaryColor;
+            }
+        }
+        &__jobTitle {
+            color: rgba(white, 0.7);
+            font-size: 1.25rem;
+        }
+        &__description {
+            margin-top: 1.5rem;
+            letter-spacing: 0.05em;
+            line-height: 1.25em;
+        }
+        &__socialNetworks {
+            align-items: center;
+            background-color: variables.$teal900;
+            border-radius: 4px;
+            display: inline-flex;
+            gap: 16px;
+            margin-top: 2rem;
+            padding: 0.25rem 1rem;
+
+            & > span {
+                font-size: 0.75rem;
+            }
+            &__list {
+                align-items: center;
+                display: flex;
+                gap: 8px;
+
+                &__item {
+                    & > a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &__skills {
+        background-color: rgba(#292524, 0.6);
+        border-radius: 12px;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 36px;
+        padding: 24px;
+
+        &__title {
+            flex-basis: 100%;
+        }
+        &__container {
+            flex-basis: 50%;
+
+            &__title {}
+            &__list {
+                display: flex;
+                flex-flow: row wrap;
+                gap: 16px;
+
+                &__item {
+                    align-items: center;
+                    display: flex;
+                    flex-flow: column wrap;
+                    gap: 6px;
+
+                    & > svg {
+                        width: 36px;
+                    }
+                    & > span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,9 @@
+import HeroSection from '../components/about/HeroSection/HeroSection';
+
 export default function AboutPage() {
-    return <>About page</>;
+    return (
+        <>
+            <HeroSection />
+        </>
+    );
 }

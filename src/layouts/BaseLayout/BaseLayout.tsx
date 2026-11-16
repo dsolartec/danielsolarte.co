@@ -36,7 +36,9 @@ const NAVIGATION_ITEMS = [
     },
 ];
 
-export default function BaseLayout({ children }: React.PropsWithChildren<{}>) {
+export default function BaseLayout({
+    children,
+}: React.PropsWithChildren<unknown>) {
     const { t } = useTranslation();
     const location = useLocation();
 
@@ -48,7 +50,7 @@ export default function BaseLayout({ children }: React.PropsWithChildren<{}>) {
                     Daniel <span>Solarte</span>
                 </h1>
                 <ul className="baseLayout__header__navigation">
-                    {NAVIGATION_ITEMS.map((item) => {
+                    {NAVIGATION_ITEMS.map((item, i) => {
                         const isActive = item.to == location.pathname;
 
                         return (
@@ -60,6 +62,7 @@ export default function BaseLayout({ children }: React.PropsWithChildren<{}>) {
                                             isActive,
                                     },
                                 )}
+                                key={`navigation_${i}`}
                             >
                                 <Link to={item.to}>
                                     {isActive

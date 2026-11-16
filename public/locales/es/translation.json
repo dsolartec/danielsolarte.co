@@ -5,5 +5,10 @@
             "experience": "Experiencia",
             "projects": "Proyectos"
         }
+    },
+    "Hello, I'm": "👋 Hola, soy",
+    "about": {
+        "title": "Desarrollador Full Stack",
+        "description": "Soy un programador autodidacta, proactivo y me adapto fácilmente a diversos proyectos; además, soy entusiasta por aprender nuevas cosas cada día."
     }
 }
