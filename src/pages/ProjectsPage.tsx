@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
-import GitHubIcon from '../assets/devicons/github-original.svg?react';
+import GitHubIcon from '../assets/tablericons/brand-github.svg?react';
 import BookOpenIcon from '../assets/tablericons/book.svg?react';
 import CodeIcon from '../assets/tablericons/code.svg?react';
 import ExternalLinkIcon from '../assets/tablericons/external-link.svg?react';
