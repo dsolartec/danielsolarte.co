@@ -1,0 +1,88 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.siteFooter {
+    background-color: variables.$bg-footer;
+    border-top: 1px solid variables.$border-light;
+    padding: 3rem 0;
+
+    &__inner {
+        @include mixins.container;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: space-between;
+
+        @include mixins.respond-to(md) {
+            flex-direction: row;
+        }
+    }
+
+    &__brand {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: center;
+
+        &__icon {
+            color: variables.$brand-teal-light;
+            display: inline-flex;
+
+            svg {
+                height: 1.25rem;
+                width: 1.25rem;
+            }
+        }
+
+        &__name {
+            color: variables.$text-primary;
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
+
+        &__copyright {
+            color: variables.$text-subtle;
+            font-size: 0.875rem;
+        }
+    }
+
+    &__nav {
+        align-items: center;
+        color: variables.$text-muted;
+        display: none;
+        flex-wrap: wrap;
+        font-size: 0.875rem;
+        gap: 1.5rem;
+        justify-content: center;
+
+        @include mixins.respond-to(md) {
+            display: flex;
+        }
+
+        &__link {
+            transition: color variables.$transition-fast;
+
+            &:hover {
+                color: variables.$brand-teal-light;
+            }
+        }
+    }
+
+    &__topBtn {
+        align-items: center;
+        border-radius: variables.$radius-lg;
+        color: variables.$text-muted;
+        display: inline-flex;
+        height: 2.5rem;
+        justify-content: center;
+        transition: all variables.$transition-base;
+        width: 2.5rem;
+
+        &:hover {
+            border-color: rgba(20, 184, 166, 0.4);
+            color: variables.$brand-teal-light;
+        }
+    }
+}

@@ -1,15 +1,27 @@
-import BrandLinkedInIcon from '../assets/tablericons/brand-linkedin.svg?react';
-import GitHubOriginalIcon from '../assets/devicons/github-original.svg?react';
+import GitHubIcon from '../assets/devicons/github-original.svg?react';
+import LinkedInIcon from '../assets/tablericons/brand-linkedin.svg?react';
+import { TelegramIcon, XTwitterIcon } from '../components/ui/Icons/Icons';
+import type { SocialNetworkItem } from '../interfaces/social-networks';
 
-export const SOCIAL_NETWORKS = [
+export const SOCIAL_NETWORKS: SocialNetworkItem[] = [
     {
-        icon: <GitHubOriginalIcon width="24px" />,
-        title: 'GitHub: @dsolartec',
-        url: 'https://www.github.com/dsolartec',
+        icon: <GitHubIcon width={20} height={20} />,
+        title: 'GitHub Profile',
+        url: 'https://github.com/dsolartec',
     },
     {
-        icon: <BrandLinkedInIcon />,
-        title: 'LinkedIn: @dsolartec',
-        url: 'https://www.linkedin.com/in/dsolartec',
+        icon: <LinkedInIcon width={20} height={20} />,
+        title: 'LinkedIn Profile',
+        url: 'https://linkedin.com/in/dsolartec',
+    },
+    {
+        icon: <TelegramIcon width={20} height={20} />,
+        title: 'Telegram Profile',
+        url: 'https://t.me/dsolartec',
+    },
+    {
+        icon: <XTwitterIcon width={16} height={16} />,
+        title: 'Twitter Profile',
+        url: 'https://twitter.com/dsolartec',
     },
 ];

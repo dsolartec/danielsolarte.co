@@ -1,0 +1,80 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.uiButton {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: variables.$radius-lg;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 0.875rem;
+    font-weight: 600;
+    gap: 0.625rem;
+    justify-content: center;
+    line-height: 1;
+    transition:
+        transform variables.$transition-base,
+        box-shadow variables.$transition-base,
+        background-color variables.$transition-base,
+        border-color variables.$transition-base;
+
+    &--sm {
+        border-radius: variables.$radius-full;
+        gap: 0.5rem;
+        padding: 0.625rem 1.25rem;
+    }
+
+    &--md {
+        padding: 0.875rem 1.75rem;
+    }
+
+    &--lg {
+        padding: 0.9375rem 1.75rem;
+    }
+
+    &--full {
+        width: 100%;
+
+        @include mixins.respond-to(sm) {
+            width: auto;
+        }
+    }
+
+    &--block {
+        width: 100%;
+    }
+
+    &--primary {
+        background: linear-gradient(
+            to right,
+            variables.$brand-teal-light,
+            variables.$brand-cyan-light
+        );
+        color: variables.$text-dark;
+
+        &:hover {
+            background: linear-gradient(
+                to right,
+                variables.$brand-teal-lighter,
+                variables.$brand-cyan-lighter
+            );
+            box-shadow: variables.$shadow-glow-teal;
+            transform: scale(1.02);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    &--glass {
+        @include mixins.glass-card(true);
+        color: variables.$text-primary;
+        font-weight: 500;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(20, 184, 166, 0.4);
+        }
+    }
+}

@@ -1,0 +1,58 @@
+import type { ExperienceItem } from '../interfaces/experience';
+
+export const EXPERIENCE_MILESTONES: ExperienceItem[] = [
+    {
+        id: 'mercado-libre-2025',
+        roleKey: 'experience.items.mercadoLibreSsr.role',
+        startDate: new Date(2025, 0, 1),
+        endDate: null,
+        organization: 'Mercado Libre S.A.S.',
+        descriptionKey: 'experience.items.mercadoLibreSsr.description',
+        accent: 'teal',
+    },
+    {
+        id: 'mercado-libre-2022',
+        roleKey: 'experience.items.mercadoLibreJr.role',
+        startDate: new Date(2022, 11, 5),
+        endDate: new Date(2024, 11, 31),
+        organization: 'Mercado Libre S.A.S.',
+        descriptionKey: 'experience.items.mercadoLibreJr.description',
+        accent: 'cyan',
+    },
+    {
+        id: 'melonn-2022',
+        roleKey: 'experience.items.melonn.role',
+        startDate: new Date(2022, 4, 23),
+        endDate: new Date(2022, 8, 13),
+        organization: 'Melonn S.A.S.',
+        descriptionKey: 'experience.items.melonn.description',
+        accent: 'emerald',
+    },
+    {
+        id: 'coordinadora-2021',
+        roleKey: 'experience.items.coordinadora.role',
+        startDate: new Date(2021, 10, 1),
+        endDate: new Date(2022, 4, 20),
+        organization: 'Coordinadora Mercantil',
+        descriptionKey: 'experience.items.coordinadora.description',
+        accent: 'teal',
+    },
+    {
+        id: 'quality-code-2021',
+        roleKey: 'experience.items.qualityCode.role',
+        startDate: new Date(2021, 3, 9),
+        endDate: new Date(2022, 4, 20),
+        organization: 'Quality Code Software House S.A.S.',
+        descriptionKey: 'experience.items.qualityCode.description',
+        accent: 'cyan',
+    },
+    {
+        id: 'epifita-2020',
+        roleKey: 'experience.items.epifita.role',
+        startDate: new Date(2020, 10, 11),
+        endDate: new Date(2020, 11, 4),
+        organization: 'Epifita S.A.S.',
+        descriptionKey: 'experience.items.epifita.description',
+        accent: 'emerald',
+    },
+];

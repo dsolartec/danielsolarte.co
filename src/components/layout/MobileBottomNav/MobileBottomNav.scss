@@ -1,0 +1,62 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.mobileBottomNav {
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    background-color: rgba(8, 12, 20, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    bottom: 0;
+    left: 0;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    position: fixed;
+    right: 0;
+    z-index: 50;
+
+    @include mixins.respond-to(md) {
+        display: none;
+    }
+
+    &__inner {
+        align-items: center;
+        display: flex;
+        height: 4.5rem;
+        justify-content: space-around;
+        padding: 0 0.25rem;
+    }
+
+    &__item {
+        align-items: center;
+        color: variables.$text-muted;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        justify-content: center;
+        min-height: 2.75rem;
+        min-width: 3rem;
+        transition:
+            color variables.$transition-fast,
+            transform variables.$transition-fast;
+
+        svg {
+            height: 1.375rem;
+            width: 1.375rem;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &--active {
+            color: variables.$brand-teal-light;
+            font-weight: 700;
+        }
+    }
+
+    &__label {
+        font-family: variables.$font-mono;
+        font-size: 0.6875rem;
+        letter-spacing: 0.03em;
+        line-height: 1;
+    }
+}

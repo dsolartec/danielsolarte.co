@@ -1,0 +1,76 @@
+@use 'variables';
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == sm {
+        @media (min-width: variables.$bp-sm) {
+            @content;
+        }
+    } @else if $breakpoint == md {
+        @media (min-width: variables.$bp-md) {
+            @content;
+        }
+    } @else if $breakpoint == lg {
+        @media (min-width: variables.$bp-lg) {
+            @content;
+        }
+    } @else if $breakpoint == xl {
+        @media (min-width: variables.$bp-xl) {
+            @content;
+        }
+    }
+}
+
+@mixin container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: variables.$container-max-width;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+
+    @include respond-to(sm) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include respond-to(lg) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@mixin glass-card($hoverable: true) {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: variables.$bg-card;
+    border: 1px solid variables.$border-subtle;
+
+    @if $hoverable {
+        transition:
+            border-color variables.$transition-base,
+            background-color variables.$transition-base,
+            transform variables.$transition-base;
+
+        &:hover {
+            border-color: variables.$border-teal-hover;
+        }
+    }
+}
+
+@mixin text-gradient-teal {
+    background: linear-gradient(
+        135deg,
+        variables.$brand-teal-light 0%,
+        variables.$brand-cyan 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin text-gradient-title {
+    background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

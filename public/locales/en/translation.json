@@ -4,6 +4,278 @@
             "about": "About me",
             "experience": "Experience",
             "projects": "Projects"
+        },
+        "links": {
+            "hero": "Home",
+            "about": "About",
+            "skills": "Skills",
+            "projects": "Projects",
+            "experience": "Experience",
+            "contact": "Contact"
+        },
+        "cta": "Let's Talk",
+        "downloadCv": "Download CV"
+    },
+    "hero": {
+        "greeting": "Hello, I'm Daniel",
+        "role": "Full Stack Developer",
+        "bio": "I'm a proactive, self-taught full-stack developer who easily adapts to diverse tech stacks. Passionate about building robust backend architectures, high-performance engines, and sleek, fluid web & mobile experiences.",
+        "actions": {
+            "exploreProjects": "Explore Projects",
+            "getInTouch": "Get in Touch"
+        },
+        "connect": "Connect:",
+        "badges": {
+            "rustGoEyebrow": "High-Performance",
+            "rustGoTitle": "Rust & Go Backend",
+            "fullStackTitle": "Full Stack Specialist",
+            "fullStackSubtitle": "Web & Mobile Architecture"
+        },
+        "stats": {
+            "experience": "Years Experience",
+            "projects": "Projects Completed",
+            "technologies": "Core Technologies",
+            "passion": "Code & Growth Passion"
+        }
+    },
+    "about": {
+        "eyebrow": "01. Overview",
+        "title": "About Me",
+        "paragraph1Prefix": "I am a ",
+        "paragraph1Strong": "self-taught full-stack developer",
+        "paragraph1Suffix": " with a solid passion for engineering resilient software, distributed systems, and user-centric interfaces. My journey began with relentless curiosity—dissecting source code, optimizing backend logic, and crafting frictionless frontend experiences.",
+        "paragraph2Part1": "Whether building a high-speed ODM from scratch in ",
+        "paragraph2Part2": ", designing low-latency real-time web applications with ",
+        "paragraph2Part3": ", or sculpting mobile interfaces using ",
+        "paragraph2Part4": ", I focus on clean maintainability, performance benchmarks, and pragmatic solutions.",
+        "highlights": {
+            "learner": "Continuous learner & active tinkerer",
+            "microservices": "Architecting scalable microservices",
+            "reactive": "Full-stack reactive web applications",
+            "dataScience": "Data science & scripting workflows"
+        },
+        "philosophy": {
+            "title": "Core Philosophy",
+            "quote": "\"Code is not just about making things function—it's about elegance, maintainability, and providing genuine value through responsive, reliable technology.\""
+        },
+        "facts": {
+            "locationLabel": "Location:",
+            "locationValue": "Remote / Global",
+            "languagesLabel": "Languages:",
+            "languagesValue": "Spanish (Native), English",
+            "statusLabel": "Status:",
+            "statusValue": "Available for Projects"
+        }
+    },
+    "skills": {
+        "eyebrow": "02. Capabilities",
+        "title": "Technical Arsenal",
+        "subtitle": "Comprehensive stack of frameworks, languages, and tools utilized across projects.",
+        "verified": "Categorized & Verified",
+        "categories": {
+            "backend": "BackEnd & Systems",
+            "frontend": "FrontEnd Engineering",
+            "databases": "Databases & Storage",
+            "mobile": "Mobile Development",
+            "data": "Data & Analytics",
+            "devops": "DevOps & Tooling"
+        }
+    },
+    "projects": {
+        "eyebrow": "03. Portfolio",
+        "title": "Best Projects",
+        "subtitle": "Selected engineering builds ranging from full-stack chat apps to systems-level Rust engines.",
+        "viewAll": "View all repositories",
+        "items": {
+            "nextchat": {
+                "badge": "Full Stack WebApp",
+                "date": "Sept 2022",
+                "description": "A high-concurrency real-time messaging social network inspired by Discord. Features real-time channel websockets, GraphQL data streaming, JWT authentication, and responsive layout across all viewports.",
+                "links": {
+                    "github": "GITHUB (WEB)",
+                    "demo": "VIEW DEMO"
+                }
+            },
+            "nongoose": {
+                "badge": "Rust Engine",
+                "date": "Nov 2021",
+                "description": "High-performance, memory-safe Object Data Modeling (ODM) library for MongoDB modeled after Mongoose, re-architected completely from the ground up in Rust for blazing microsecond latencies.",
+                "links": {
+                    "github": "GITHUB",
+                    "docs": "DOCUMENTATION"
+                }
+            }
+        }
+    },
+    "experience": {
+        "eyebrow": "04. Milestones",
+        "title": "Engineering Path & Experience",
+        "present": "Present",
+        "items": {
+            "mercadoLibreSsr": {
+                "role": "CyberSecurity Engineer (SSr.)",
+                "description": "I am on the Identity Access Manager (IAM) team"
+            },
+            "mercadoLibreJr": {
+                "role": "CyberSecurity Developer (Jr.)",
+                "description": "I am on the Identity Access Manager (IAM) team"
+            },
+            "melonn": {
+                "role": "Junior Cloud Engineering",
+                "description": "I built new components and integrations for the internal page, both front-end and back-end"
+            },
+            "coordinadora": {
+                "role": "Ext. Front-End Developer and devOps",
+                "description": "I automated web deployments using GitHub Actions with a rollback system if Cypress automated tests fail and I participated in the creation of the page with the new track guide design"
+            },
+            "qualityCode": {
+                "role": "Full-Stack Developer",
+                "description": "I developed a mobile application in Flutter that includes an integrated chat and voice calls, I developed a mobile application in Flutter of time tracking type for employees, for iOS and Android, I used the agile SCRUM methodology and led some projects, I fixed and built new features for APIs built in C# and I designed web interfaces using Figma and the Material Design guidelines"
+            },
+            "epifita": {
+                "role": "Full-Stack Developer",
+                "description": "I collaborated in the creation of an API that combines different data from SIATA, and also I built a web page with an interactive map that included 3D figures for the 40th anniversary of the Metropolitan Area (https://amva40.github.io/)"
+            }
+        }
+    },
+    "contact": {
+        "eyebrow": "Ready to build?",
+        "title": "Let's Work Together!",
+        "description": "Whether you need a high-performance backend, a modern full-stack web application, or custom software architecture, I'm currently available for freelance roles, collaborations, and contract opportunities.",
+        "emailLabel": "Direct Email",
+        "locationLabel": "Location",
+        "locationValue": "Remote / Open to Relocation",
+        "form": {
+            "nameLabel": "Your Name",
+            "namePlaceholder": "John Doe",
+            "emailLabel": "Your Email",
+            "emailPlaceholder": "john@company.com",
+            "messageLabel": "Project Details",
+            "messagePlaceholder": "Tell me about your project, timeline, or requirements...",
+            "submit": "Send Message",
+            "submitted": "Thanks! Your message has been queued."
+        }
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "backToTop": "Back to top"
+    },
+    "projectsPage": {
+        "eyebrow": "03. Archive",
+        "title": "All Projects",
+        "subtitle": "Complete archive of web apps, backend engines, CLI tools, mobile prototypes, and open-source contributions.",
+        "backToHome": "Back to Home",
+        "allCategories": "All",
+        "categories": {
+            "BackEnd": "BackEnd",
+            "FrontEnd": "FrontEnd",
+            "FullStack": "FullStack",
+            "University": "University",
+            "Importants": "Featured",
+            "Meetings": "Talks",
+            "Contributions": "Contributions",
+            "Designs": "Designs",
+            "Mobile": "Mobile"
+        },
+        "links": {
+            "github": "GitHub",
+            "demo": "Demo",
+            "docs": "Docs",
+            "youtube": "YouTube",
+            "twitter": "Twitter",
+            "githubAPI": "GitHub (API)",
+            "githubWEB": "GitHub (Web)",
+            "githubMobile": "GitHub (Mobile)"
+        },
+        "items": {
+            "PythonBikergroupsWebAPP": {
+                "title": "Python Biker Groups WebApp",
+                "description": "University OOP web application built with Python, Flask, templates, SCSS, PostgreSQL, Figma mockups, and Antigravity."
+            },
+            "ElipseInteractiveWeb": {
+                "title": "Elipse Interactive Web",
+                "description": "University interactive ellipse web application built with HTML, CSS, and JavaScript using Claude Code."
+            },
+            "portfoliov3": {
+                "title": "Portfolio v3",
+                "description": "Third iteration of my personal portfolio built with Material UI, ViteJS, React, TypeScript, and SCSS."
+            },
+            "PTFinalProject": {
+                "title": "PT Final Project",
+                "description": "University final desktop application built with C# and WPF."
+            },
+            "NextChat2022": {
+                "title": "NextChat (2022)",
+                "description": "High-concurrency real-time messaging social network built with GraphQL, NestJS, MongoDB, ReactJS, and ViteJS."
+            },
+            "operationsAPP": {
+                "title": "Operations App",
+                "description": "University desktop application for mathematical operations built in C# and WinForms."
+            },
+            "nongoose": {
+                "title": "Nongoose",
+                "description": "MongoDB Object Data Modeling (ODM) library modeled after Mongoose, written from scratch in Rust."
+            },
+            "languagesrs": {
+                "title": "Languages-rs",
+                "description": "Rust library and parser experiments for language detection and processing."
+            },
+            "tgs2021": {
+                "title": "TGS Final Prototype",
+                "description": "University systems theory final prototype web application built with Next.js, ReactJS, and TypeScript."
+            },
+            "portfoliov2": {
+                "title": "Portfolio v2",
+                "description": "Second iteration of my personal portfolio powered by Rust (Actix Web) and SASS."
+            },
+            "radiolibre": {
+                "title": "Radio Libre Template",
+                "description": "Responsive web template for an online radio station crafted with HTML5 and CSS3."
+            },
+            "GitHubPresente": {
+                "title": "GitHub Presente Talk",
+                "description": "Community talk and presentation about Rust and open-source development."
+            },
+            "AMVA40": {
+                "title": "AMVA 40th Anniversary",
+                "description": "Interactive map web application with 3D figures and SIATA data API for the 40th anniversary of the Metropolitan Area."
+            },
+            "BeccaLyria": {
+                "title": "Becca Lyria Bot",
+                "description": "Open-source contributions to the Becca Lyria Discord bot and its documentation in TypeScript."
+            },
+            "portfoliov1": {
+                "title": "Portfolio v1",
+                "description": "First version of my personal developer portfolio built with ReactJS, JavaScript, and SASS."
+            },
+            "NextDatabase": {
+                "title": "NextDatabase",
+                "description": "TypeScript and Node.js database utility wrapper for MySQL."
+            },
+            "sflynlang": {
+                "title": "SflynLang Interpreter",
+                "description": "Programming language interpreter implemented in Rust."
+            },
+            "spooked": {
+                "title": "Spooked",
+                "description": "Backend service built with Node.js, TypeScript, MySQL, and MongoDB."
+            },
+            "rustNotesCLI": {
+                "title": "Rust Notes CLI",
+                "description": "Fast command-line note-taking application written in Rust."
+            },
+            "NextMusic": {
+                "title": "NextMusic",
+                "description": "Mobile music player UI/UX design in Figma and prototype built with Ionic, ReactJS, and TypeScript."
+            },
+            "FaztCommunity": {
+                "title": "Fazt Community Challenge",
+                "description": "Frontend layout challenge built with pure HTML and CSS for the Fazt Tech community."
+            },
+            "NextChat2020": {
+                "title": "NextChat (2020)",
+                "description": "First version of NextChat featuring a Node.js/Express/Socket.IO API, ReactJS web client, and Flutter mobile app."
+            }
         }
     }
 }

@@ -1,14 +1,281 @@
 {
     "navigation": {
         "pages": {
-            "about": "Sobre mi",
+            "about": "Sobre mí",
             "experience": "Experiencia",
             "projects": "Proyectos"
+        },
+        "links": {
+            "hero": "Inicio",
+            "about": "Sobre mí",
+            "skills": "Habilidades",
+            "projects": "Proyectos",
+            "experience": "Experiencia",
+            "contact": "Contacto"
+        },
+        "cta": "Hablemos",
+        "downloadCv": "Descargar CV"
+    },
+    "hero": {
+        "greeting": "Hola, soy Daniel",
+        "role": "Desarrollador Full Stack",
+        "bio": "Soy un desarrollador full-stack autodidacta y proactivo que se adapta fácilmente a diversos stacks tecnológicos. Apasionado por construir arquitecturas backend robustas, motores de alto rendimiento y experiencias web y móviles fluidas.",
+        "actions": {
+            "exploreProjects": "Explorar Proyectos",
+            "getInTouch": "Contáctame"
+        },
+        "connect": "Conectar:",
+        "badges": {
+            "rustGoEyebrow": "Alto Rendimiento",
+            "rustGoTitle": "Backend Rust & Go",
+            "fullStackTitle": "Especialista Full Stack",
+            "fullStackSubtitle": "Arquitectura Web y Móvil"
+        },
+        "stats": {
+            "experience": "Años de Experiencia",
+            "projects": "Proyectos Completados",
+            "technologies": "Tecnologías Core",
+            "passion": "Pasión por el Código"
         }
     },
-    "Hello, I'm": "👋 Hola, soy",
     "about": {
-        "title": "Desarrollador Full Stack",
-        "description": "Soy un programador autodidacta, proactivo y me adapto fácilmente a diversos proyectos; además, soy entusiasta por aprender nuevas cosas cada día."
+        "eyebrow": "01. Resumen",
+        "title": "Sobre Mí",
+        "paragraph1Prefix": "Soy un ",
+        "paragraph1Strong": "desarrollador full-stack autodidacta",
+        "paragraph1Suffix": " con una sólida pasión por la ingeniería de software resiliente, sistemas distribuidos e interfaces centradas en el usuario. Mi camino comenzó con una curiosidad incansable: analizando código fuente, optimizando lógica backend y creando experiencias frontend sin fricción.",
+        "paragraph2Part1": "Ya sea construyendo un ODM de alta velocidad desde cero en ",
+        "paragraph2Part2": ", diseñando aplicaciones web en tiempo real de baja latencia con ",
+        "paragraph2Part3": ", o esculpiendo interfaces móviles usando ",
+        "paragraph2Part4": ", me enfoco en la mantenibilidad limpia, benchmarks de rendimiento y soluciones pragmáticas.",
+        "highlights": {
+            "learner": "Aprendiz continuo y entusiasta técnico",
+            "microservices": "Arquitectura de microservicios escalables",
+            "reactive": "Aplicaciones web reactivas full-stack",
+            "dataScience": "Ciencia de datos y flujos de scripting"
+        },
+        "philosophy": {
+            "title": "Filosofía Principal",
+            "quote": "\"El código no se trata solo de hacer que las cosas funcionen—se trata de elegancia, mantenibilidad y aportar valor real mediante tecnología responsiva y confiable.\""
+        },
+        "facts": {
+            "locationLabel": "Ubicación:",
+            "locationValue": "Remoto / Global",
+            "languagesLabel": "Idiomas:",
+            "languagesValue": "Español (Nativo), Inglés",
+            "statusLabel": "Estado:",
+            "statusValue": "Disponible para Proyectos"
+        }
+    },
+    "skills": {
+        "eyebrow": "02. Capacidades",
+        "title": "Arsenal Técnico",
+        "subtitle": "Stack completo de frameworks, lenguajes y herramientas utilizadas en mis proyectos.",
+        "verified": "Categorizado y Verificado",
+        "categories": {
+            "backend": "BackEnd y Sistemas",
+            "frontend": "Ingeniería FrontEnd",
+            "databases": "Bases de Datos",
+            "mobile": "Desarrollo Móvil",
+            "data": "Datos y Analítica",
+            "devops": "DevOps y Herramientas"
+        }
+    },
+    "projects": {
+        "eyebrow": "03. Portafolio",
+        "title": "Mejores Proyectos",
+        "subtitle": "Selección de desarrollos que abarcan desde chats full-stack en tiempo real hasta motores de sistemas en Rust.",
+        "viewAll": "Ver todos los repositorios",
+        "items": {
+            "nextchat": {
+                "badge": "WebApp Full Stack",
+                "date": "Sept 2022",
+                "description": "Red social de mensajería en tiempo real de alta concurrencia inspirada en Discord. Incluye canales por websockets en tiempo real, streaming de datos con GraphQL, autenticación JWT y diseño responsivo.",
+                "links": {
+                    "github": "GITHUB (WEB)",
+                    "demo": "VER DEMO"
+                }
+            },
+            "nongoose": {
+                "badge": "Motor Rust",
+                "date": "Nov 2021",
+                "description": "Librería ODM (Object Data Modeling) segura en memoria y de alto rendimiento para MongoDB inspirada en Mongoose, re-arquitecturada desde cero en Rust para latencias en microsegundos.",
+                "links": {
+                    "github": "GITHUB",
+                    "docs": "DOCUMENTACIÓN"
+                }
+            }
+        }
+    },
+    "experience": {
+        "eyebrow": "04. Trayectoria",
+        "title": "Experiencia e Hitos",
+        "present": "Actualidad",
+        "items": {
+            "mercadoLibreSsr": {
+                "role": "CyberSecurity Engineer (SSr.)",
+                "description": "Hago parte del equipo de Identity Access Manager (IAM)"
+            },
+            "mercadoLibreJr": {
+                "role": "CyberSecurity Developer (Jr.)",
+                "description": "Hago parte del equipo de Identity Access Manager (IAM)"
+            },
+            "melonn": {
+                "role": "Junior Cloud Engineering",
+                "description": "Construí nuevos componentes e integraciones para la página interna, tanto en front-end como en back-end"
+            },
+            "coordinadora": {
+                "role": "Ext. Front-End Developer and devOps",
+                "description": "Automaticé despliegues web usando GitHub Actions con un sistema de rollback si fallaban las pruebas automatizadas en Cypress y participé en la creación de la página con el nuevo diseño de guía de rastreo"
+            },
+            "qualityCode": {
+                "role": "Full-Stack Developer",
+                "description": "Desarrollé una aplicación móvil en Flutter con chat y llamadas de voz integradas, desarrollé una aplicación móvil en Flutter de registro de tiempo para empleados en iOS y Android, trabajé con metodología ágil SCRUM liderando algunos proyectos, corregí y construí nuevas funcionalidades para APIs en C# y diseñé interfaces web usando Figma y las guías de Material Design"
+            },
+            "epifita": {
+                "role": "Full-Stack Developer",
+                "description": "Colaboré en la creación de una API que combina distintos datos de SIATA y construí una página web con un mapa interactivo que incluía figuras 3D para el 40 aniversario del Área Metropolitana (https://amva40.github.io/)"
+            }
+        }
+    },
+    "contact": {
+        "eyebrow": "¿Listo para construir?",
+        "title": "¡Trabajemos Juntos!",
+        "description": "Ya sea que necesites un backend de alto rendimiento, una aplicación web full-stack moderna o arquitectura de software a medida, actualmente estoy disponible para roles freelance, colaboraciones y contratos.",
+        "emailLabel": "Correo Directo",
+        "locationLabel": "Ubicación",
+        "locationValue": "Remoto / Disponible para Reubicación",
+        "form": {
+            "nameLabel": "Tu Nombre",
+            "namePlaceholder": "Juan Pérez",
+            "emailLabel": "Tu Correo",
+            "emailPlaceholder": "juan@empresa.com",
+            "messageLabel": "Detalles del Proyecto",
+            "messagePlaceholder": "Cuéntame sobre tu proyecto, tiempos o requerimientos...",
+            "submit": "Enviar Mensaje",
+            "submitted": "¡Gracias! Tu mensaje ha sido enviado."
+        }
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados.",
+        "backToTop": "Volver arriba"
+    },
+    "projectsPage": {
+        "eyebrow": "03. Archivo",
+        "title": "Todos los Proyectos",
+        "subtitle": "Archivo completo de aplicaciones web, motores backend, herramientas CLI, prototipos móviles y contribuciones open-source.",
+        "backToHome": "Volver al Inicio",
+        "allCategories": "Todos",
+        "categories": {
+            "BackEnd": "BackEnd",
+            "FrontEnd": "FrontEnd",
+            "FullStack": "FullStack",
+            "University": "Universidad",
+            "Importants": "Destacados",
+            "Meetings": "Charlas",
+            "Contributions": "Contribuciones",
+            "Designs": "Diseños",
+            "Mobile": "Móvil"
+        },
+        "links": {
+            "github": "GitHub",
+            "demo": "Demo",
+            "docs": "Docs",
+            "youtube": "YouTube",
+            "twitter": "Twitter",
+            "githubAPI": "GitHub (API)",
+            "githubWEB": "GitHub (Web)",
+            "githubMobile": "GitHub (Móvil)"
+        },
+        "items": {
+            "PythonBikergroupsWebAPP": {
+                "title": "Python Biker Groups WebApp",
+                "description": "Aplicación web universitaria para la materia de POO construida con Python, Flask, templates, SCSS, PostgreSQL, mockups en Figma y Antigravity."
+            },
+            "ElipseInteractiveWeb": {
+                "title": "Elipse Interactive Web",
+                "description": "Aplicación web interactiva sobre elipses para la universidad construida con HTML, CSS y JavaScript usando Claude Code."
+            },
+            "portfoliov3": {
+                "title": "Portafolio v3",
+                "description": "Tercera iteración de mi portafolio personal construido con Material UI, ViteJS, React, TypeScript y SCSS."
+            },
+            "PTFinalProject": {
+                "title": "Proyecto Final PT",
+                "description": "Aplicación de escritorio universitaria desarrollada con C# y WPF."
+            },
+            "NextChat2022": {
+                "title": "NextChat (2022)",
+                "description": "Red social de mensajería en tiempo real de alta concurrencia construida con GraphQL, NestJS, MongoDB, ReactJS y ViteJS."
+            },
+            "operationsAPP": {
+                "title": "Operations App",
+                "description": "Aplicación de escritorio universitaria para operaciones matemáticas hecha en C# y WinForms."
+            },
+            "nongoose": {
+                "title": "Nongoose",
+                "description": "Librería ODM (Object Data Modeling) para MongoDB inspirada en Mongoose, escrita desde cero en Rust."
+            },
+            "languagesrs": {
+                "title": "Languages-rs",
+                "description": "Librería y experimentos en Rust para detección y procesamiento de lenguajes."
+            },
+            "tgs2021": {
+                "title": "Prototipo Final TGS",
+                "description": "Prototipo web para el proyecto final de Teoría General de Sistemas construido con Next.js, ReactJS y TypeScript."
+            },
+            "portfoliov2": {
+                "title": "Portafolio v2",
+                "description": "Segunda iteración de mi portafolio personal desarrollado con Rust (Actix Web) y SASS."
+            },
+            "radiolibre": {
+                "title": "Plantilla Radio Libre",
+                "description": "Plantilla web responsiva para emisora de radio online creada con HTML5 y CSS3."
+            },
+            "GitHubPresente": {
+                "title": "Charla GitHub Presente",
+                "description": "Charla y presentación comunitaria sobre Rust y desarrollo open-source."
+            },
+            "AMVA40": {
+                "title": "AMVA 40 Aniversario",
+                "description": "Aplicación web con mapa interactivo, figuras 3D y API de datos SIATA para el 40 aniversario del Área Metropolitana."
+            },
+            "BeccaLyria": {
+                "title": "Becca Lyria Bot",
+                "description": "Contribuciones open-source al bot de Discord Becca Lyria y su documentación en TypeScript."
+            },
+            "portfoliov1": {
+                "title": "Portafolio v1",
+                "description": "Primera versión de mi portafolio personal construida con ReactJS, JavaScript y SASS."
+            },
+            "NextDatabase": {
+                "title": "NextDatabase",
+                "description": "Utilidad wrapper en TypeScript y Node.js para bases de datos MySQL."
+            },
+            "sflynlang": {
+                "title": "Intérprete SflynLang",
+                "description": "Intérprete de lenguaje de programación implementado en Rust."
+            },
+            "spooked": {
+                "title": "Spooked",
+                "description": "Servicio backend construido con Node.js, TypeScript, MySQL y MongoDB."
+            },
+            "rustNotesCLI": {
+                "title": "Rust Notes CLI",
+                "description": "Aplicación rápida de línea de comandos para tomar notas escrita en Rust."
+            },
+            "NextMusic": {
+                "title": "NextMusic",
+                "description": "Diseño UI/UX de reproductor musical en Figma y prototipo móvil con Ionic, ReactJS y TypeScript."
+            },
+            "FaztCommunity": {
+                "title": "Reto Comunidad Fazt",
+                "description": "Reto de maquetación frontend con HTML y CSS puro para la comunidad de Fazt Tech."
+            },
+            "NextChat2020": {
+                "title": "NextChat (2020)",
+                "description": "Primera versión de NextChat con API en Node.js/Express/Socket.IO, cliente web en ReactJS y app móvil en Flutter."
+            }
+        }
     }
 }

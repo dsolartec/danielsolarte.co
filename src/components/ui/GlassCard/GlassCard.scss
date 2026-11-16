@@ -1,0 +1,27 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.glassCard {
+    @include mixins.glass-card(true);
+    border-radius: variables.$radius-xl;
+
+    &--static {
+        @include mixins.glass-card(false);
+    }
+
+    &--rounded-2xl {
+        border-radius: variables.$radius-2xl;
+    }
+
+    &--accent-teal {
+        border-color: rgba(20, 184, 166, 0.2);
+
+        &:hover {
+            border-color: variables.$border-teal-strong;
+        }
+    }
+
+    &--accent-teal-strong {
+        border-color: rgba(20, 184, 166, 0.3);
+    }
+}
