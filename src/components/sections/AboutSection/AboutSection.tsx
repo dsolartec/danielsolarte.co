@@ -1,8 +1,9 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
+import TerminalIcon from '../../../assets/tablericons/terminal.svg?react';
 import { ABOUT_FACTS, ABOUT_HIGHLIGHT_KEYS } from '../../../constants/about';
 import GlassCard from '../../ui/GlassCard/GlassCard';
-import { CheckIcon, TerminalIcon } from '../../ui/Icons/Icons';
+import { CheckIcon } from '../../ui/Icons/Icons';
 import SectionHeader from '../../ui/SectionHeader/SectionHeader';
 import './AboutSection.scss';
 
